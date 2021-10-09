@@ -20,7 +20,7 @@ class MailController extends Controller
         try{
             $students = Student::orderBy('id', 'ASC')->get();
     
-            Mail::to('vitocarlengiovanni@gmail.com')->send(new StudentMail($students));
+            Mail::to('shirohaku12@gmail.com')->send(new StudentMail($students));
             return redirect()->route('students.index')->with('success', 'Mail sent successfully.');
         }catch(Exception $e) {
             return redirect()->route('students.index')->with('fail', 'Mail is not sent.');
