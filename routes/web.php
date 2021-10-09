@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FacultyController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,5 @@ use App\Http\Controllers\FacultyController;
 */
 
 Route::resource('faculties', FacultyController::class);
+Route::resource('students', StudentController::class);
+Route::resource('mails', MailController::class);
